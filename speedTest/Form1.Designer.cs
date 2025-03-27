@@ -34,21 +34,23 @@
             this.lblUpload = new System.Windows.Forms.Label();
             this.lblPing = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnTest
             // 
-            this.btnTest.Location = new System.Drawing.Point(320, 193);
+            this.btnTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTest.Location = new System.Drawing.Point(241, 193);
             this.btnTest.Name = "btnTest";
-            this.btnTest.Size = new System.Drawing.Size(100, 54);
+            this.btnTest.Size = new System.Drawing.Size(137, 53);
             this.btnTest.TabIndex = 0;
-            this.btnTest.Text = "GO";
+            this.btnTest.Text = "Kiểm tra";
             this.btnTest.UseVisualStyleBackColor = true;
             this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(302, 136);
+            this.progressBar1.Location = new System.Drawing.Point(236, 136);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(142, 23);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
@@ -58,44 +60,59 @@
             // lblDownload
             // 
             this.lblDownload.AutoSize = true;
-            this.lblDownload.Location = new System.Drawing.Point(145, 314);
+            this.lblDownload.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDownload.Location = new System.Drawing.Point(33, 266);
             this.lblDownload.Name = "lblDownload";
-            this.lblDownload.Size = new System.Drawing.Size(119, 16);
+            this.lblDownload.Size = new System.Drawing.Size(178, 25);
             this.lblDownload.TabIndex = 2;
             this.lblDownload.Text = "Download: -- Mbps";
             // 
             // lblUpload
             // 
             this.lblUpload.AutoSize = true;
-            this.lblUpload.Location = new System.Drawing.Point(317, 314);
+            this.lblUpload.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUpload.Location = new System.Drawing.Point(277, 266);
             this.lblUpload.Name = "lblUpload";
-            this.lblUpload.Size = new System.Drawing.Size(103, 16);
+            this.lblUpload.Size = new System.Drawing.Size(153, 25);
             this.lblUpload.TabIndex = 3;
             this.lblUpload.Text = "Upload: -- Mbps";
             // 
             // lblPing
             // 
             this.lblPing.AutoSize = true;
-            this.lblPing.Location = new System.Drawing.Point(470, 314);
+            this.lblPing.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPing.Location = new System.Drawing.Point(485, 266);
             this.lblPing.Name = "lblPing";
-            this.lblPing.Size = new System.Drawing.Size(69, 16);
+            this.lblPing.Size = new System.Drawing.Size(107, 25);
             this.lblPing.TabIndex = 4;
             this.lblPing.Text = "Ping: -- ms";
             // 
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(337, 282);
+            this.lblStatus.Location = new System.Drawing.Point(279, 100);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(58, 16);
             this.lblStatus.TabIndex = 5;
             this.lblStatus.Text = "Status: --";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(166, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(301, 32);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Kiểm tra tốc độ mạng";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(658, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.lblPing);
             this.Controls.Add(this.lblUpload);
@@ -118,6 +135,7 @@
         private System.Windows.Forms.Label lblUpload;
         private System.Windows.Forms.Label lblPing;
         private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Label label1;
     }
 }
 
