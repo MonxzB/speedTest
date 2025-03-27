@@ -43,10 +43,14 @@ namespace speedTest
             lblUpload.Text = $"Upload: {uploadTask.Result:F2} Mbps";
             lblPing.Text = $"Ping: {pingTask.Result} ms";
 
+            // Cập nhật trạng thái thành "Đã xong"
+            lblStatus.Text = "Đã xong";
+
             // Tắt ProgressBar và mở lại nút Test
             progressBar1.Visible = false;
             btnTest.Enabled = true;
         }
+
 
         // Phương thức kiểm tra tốc độ Download
         private async Task<double> TestDownloadSpeed()
